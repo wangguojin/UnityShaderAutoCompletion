@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TernarySearchTree/TernaryTreeExtended.cs">
+    <Files>
+      <File FileName="TernarySearchTree/Properties/AssemblyInfo.cs" Line="34" Column="34" />
+      <File FileName="TernarySearchTree/ITernaryTree.cs" Line="28" Column="28" />
+      <File FileName="TernarySearchTree/TernaryTree.cs" Line="38" Column="38" />
+      <File FileName="TernarySearchTree/TernaryTreeExtended.cs" Line="2" Column="2" />
+      <File FileName="TernarySearchTreeTests/TernaryTreeTests.cs" Line="10" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

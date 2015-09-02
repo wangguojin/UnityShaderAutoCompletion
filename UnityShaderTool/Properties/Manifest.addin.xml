@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+	<Extension path="/MonoDevelop/Ide/TextEditorExtensions">
+		<Class fileExtensions = ".shader"
+			   id = "UnityShaderTool.ShaderComplete"
+			   class = "UnityShaderTool.ShaderComplete"/>
+	</Extension>
+	<Extension path = "/MonoDevelop/Core/StockIcons">
+		<StockIcon stockid = "md-fun" resource = "button_arrow_1_1.png"/>
+	</Extension>
+
+	<Extension path = "/MonoDevelop/Core/MimeTypes">
+		<MimeType id="text/x-shader" _description="ShaderLab shader" isText="true">
+			<File pattern="*.shader" />
+			<File pattern="*.cginc" />
+			<File pattern="*.glslinc" />
+		</MimeType>
+		<MimeType id="text/x-unitytxt" _description="Unity text metalanguage" isText="true">
+			<File pattern="*.txt" />
+			<File pattern="*.bindings" />
+		</MimeType>
+	</Extension>
+
+	<Extension path = "/MonoDevelop/SourceEditor2/SyntaxModes">
+		<Templates resource="UnityShaderTool.SyntaxModes.ShaderLabSyntaxMode.xml"/>
+		<Templates resource="UnityShaderTool.SyntaxModes.UnityTxtSyntaxMode.xml"/>
+	</Extension>
+</ExtensionModel>

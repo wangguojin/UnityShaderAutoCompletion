@@ -1,0 +1,3375 @@
+{
+  "variner_sets": [
+    {
+      "variables": {
+        "desc": "float4"
+      }, 
+      "name": "_Wind", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "fixed4"
+      }, 
+      "name": "_LightColor0", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "fixed4"
+      }, 
+      "name": "_SpecColor", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4"
+      }, 
+      "name": "_ShadowOffsets[4]", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D"
+      }, 
+      "name": "_ShadowMapTexture", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4"
+      }, 
+      "name": "_ShadowOffsets[4]", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "samplerCUBE"
+      }, 
+      "name": "_ShadowMapTexture", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D"
+      }, 
+      "name": "_LightTexture0", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4x4"
+      }, 
+      "name": "_LightMatrix0", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D"
+      }, 
+      "name": "_LightTexture0", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4x4"
+      }, 
+      "name": "_LightMatrix0", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D"
+      }, 
+      "name": "_LightTextureB0", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "samplerCUBE"
+      }, 
+      "name": "_LightTexture0", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4x4"
+      }, 
+      "name": "_LightMatrix0", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D"
+      }, 
+      "name": "_LightTextureB0", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D"
+      }, 
+      "name": "_LightTexture0", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4x4"
+      }, 
+      "name": "_LightMatrix0", 
+      "file": "AutoLight.cginc"
+    }
+  ], 
+  "struct_sets": [
+    {
+      "variables": {
+        "color": [
+          "fixed4", 
+          "COLOR"
+        ], 
+        "tangent": [
+          "float4", 
+          "TANGENT"
+        ], 
+        "vertex": [
+          "float4", 
+          "POSITION"
+        ], 
+        "texcoord": [
+          "float4", 
+          "TEXCOORD0"
+        ], 
+        "normal": [
+          "float3", 
+          "NORMAL"
+        ]
+      }, 
+      "name": "appdata_tree", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "color": [
+          "fixed4", 
+          "COLOR"
+        ], 
+        "texcoord1": [
+          "float2", 
+          "TEXCOORD1"
+        ], 
+        "vertex": [
+          "float4", 
+          "POSITION"
+        ], 
+        "texcoord": [
+          "Colorfloat4", 
+          "TEXCOORD0"
+        ]
+      }, 
+      "name": "appdata_tree_billboard", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "normal": [
+          "float3", 
+          "NORMAL"
+        ], 
+        "color": [
+          "normalfixed4", 
+          "COLOR"
+        ], 
+        "texcoord1": [
+          "float4", 
+          "TEXCOORD1"
+        ], 
+        "vertex": [
+          "float4", 
+          "POSITION"
+        ], 
+        "texcoord": [
+          "unusedfloat4", 
+          "TEXCOORD0"
+        ], 
+        "tangent": [
+          "float4", 
+          "TANGENT"
+        ]
+      }, 
+      "name": "appdata_grass", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "Normal": [
+          "fixed3", 
+          "法线"
+        ], 
+        "Gloss": [
+          "fixed", 
+          "光泽[0,1]"
+        ], 
+        "Emission": [
+          "fixed3", 
+          "自发光颜色"
+        ], 
+        "Specular": [
+          "half", 
+          "高光系数[0,1]"
+        ], 
+        "Alpha": [
+          "fixed", 
+          "透明度"
+        ], 
+        "Albedo": [
+          "fixed3", 
+          "漫反射颜色"
+        ]
+      }, 
+      "name": "SurfaceOutput", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "inside": [
+          "float", 
+          "SV_InsideTessFactor"
+        ]
+      }, 
+      "name": "UnityTessellationFactors", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "s": [
+          "SamplerState", 
+          "null"
+        ], 
+        "t": [
+          "Texture1D", 
+          "null"
+        ]
+      }, 
+      "name": "sampler1D", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "s": [
+          "SamplerState", 
+          "null"
+        ], 
+        "t": [
+          "Texture2D", 
+          "null"
+        ]
+      }, 
+      "name": "sampler2D", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "s": [
+          "SamplerState", 
+          "null"
+        ], 
+        "t": [
+          "Texture3D", 
+          "null"
+        ]
+      }, 
+      "name": "sampler3D", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "s": [
+          "SamplerState", 
+          "null"
+        ], 
+        "t": [
+          "TextureCube", 
+          "null"
+        ]
+      }, 
+      "name": "samplerCUBE", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "vertex": [
+          "float4", 
+          "POSITION"
+        ], 
+        "texcoord": [
+          "float4", 
+          "TEXCOORD0"
+        ], 
+        "normal": [
+          "float3", 
+          "NORMAL"
+        ]
+      }, 
+      "name": "appdata_base", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "tangent": [
+          "float4", 
+          "TANGENT"
+        ], 
+        "vertex": [
+          "float4", 
+          "POSITION"
+        ], 
+        "texcoord": [
+          "float4", 
+          "TEXCOORD0"
+        ], 
+        "normal": [
+          "float3", 
+          "NORMAL"
+        ]
+      }, 
+      "name": "appdata_tan", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "normal": [
+          "float3", 
+          "NORMAL"
+        ], 
+        "color": [
+          "fixed4", 
+          "COLOR"
+        ], 
+        "texcoord2": [
+          "half4", 
+          "TEXCOORD2"
+        ], 
+        "texcoord1": [
+          "float4", 
+          "TEXCOORD1"
+        ], 
+        "vertex": [
+          "float4", 
+          "POSITION"
+        ], 
+        "texcoord": [
+          "float4", 
+          "TEXCOORD0"
+        ], 
+        "texcoord4": [
+          "half4", 
+          "TEXCOORD4"
+        ], 
+        "texcoord3": [
+          "half4", 
+          "TEXCOORD3"
+        ], 
+        "tangent": [
+          "float4", 
+          "TANGENT"
+        ], 
+        "texcoord5": [
+          "half4", 
+          "TEXCOORD5"
+        ]
+      }, 
+      "name": "appdata_full", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "diff": [
+          "fixed4", 
+          "COLOR0"
+        ], 
+        "uv": [
+          "float2", 
+          "TEXCOORD0"
+        ], 
+        "spec": [
+          "fixed4", 
+          "COLOR1"
+        ]
+      }, 
+      "name": "v2f_vertex_lit", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "vertex": [
+          "float4", 
+          "POSITION"
+        ], 
+        "texcoord": [
+          "half2", 
+          "TEXCOORD0"
+        ]
+      }, 
+      "name": "appdata_img", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "uv": [
+          "half2", 
+          "TEXCOORD0"
+        ], 
+        "pos": [
+          "float4", 
+          "SV_POSITION"
+        ]
+      }, 
+      "name": "v2f_img", 
+      "file": "UnityCG.cginc"
+    }
+  ], 
+  "func_sets": [
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "val"
+          ], 
+          [
+            "out float4", 
+            "s"
+          ], 
+          [
+            "out float4", 
+            "c"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "FastSinCos", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "inout float4", 
+            "vertex"
+          ], 
+          [
+            "float", 
+            "waveAmount"
+          ], 
+          [
+            "fixed4", 
+            "color"
+          ]
+        ], 
+        "ret": "fixed4"
+      }, 
+      "name": "TerrainWaveGrass", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "inout float4", 
+            "pos"
+          ], 
+          [
+            "float2", 
+            "offset"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "TerrainBillboardGrass", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "inout appdata_full", 
+            "v"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "WavingGrassVert", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "inout appdata_full", 
+            "v"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "WavingGrassBillboardVert", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "in float4", 
+            "pos"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "Squash", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "inout float4", 
+            "pos"
+          ], 
+          [
+            "float", 
+            "alpha"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "TerrainAnimateTree", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "inout float4", 
+            "pos"
+          ], 
+          [
+            "float2", 
+            "offset"
+          ], 
+          [
+            "float", 
+            "offsetz"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "TerrainBillboardTree", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "in float4x4", 
+            "mat"
+          ], 
+          [
+            "inout float4", 
+            "pos"
+          ], 
+          [
+            "inout float3", 
+            "normal"
+          ], 
+          [
+            "inout float4", 
+            "tangent"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "ExpandBillboard", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "x"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "SmoothCurve", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "x"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "TriangleWave", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "x"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "SmoothTriangleWave", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "pos"
+          ], 
+          [
+            "float3", 
+            "normal"
+          ], 
+          [
+            "float4", 
+            "animParams"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "AnimateVertex", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "inout appdata_full", 
+            "v"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "TreeVertBark", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "inout appdata_full", 
+            "v"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "TreeVertLeaf", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "in half3x3", 
+            "dirBasis"
+          ], 
+          [
+            "fixed4", 
+            "color"
+          ], 
+          [
+            "fixed4", 
+            "scale"
+          ], 
+          [
+            "half3", 
+            "normal"
+          ], 
+          [
+            "bool", 
+            "surfFuncWritesNormal"
+          ], 
+          [
+            "out half3", 
+            "scalePerBasisVector"
+          ]
+        ], 
+        "ret": "half3"
+      }, 
+      "name": "DirLightmapDiffuse", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "SurfaceOutput", 
+            "s"
+          ], 
+          [
+            "fixed3", 
+            "lightDir"
+          ], 
+          [
+            "fixed", 
+            "atten"
+          ]
+        ], 
+        "ret": "fixed4"
+      }, 
+      "name": "LightingLambert", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "SurfaceOutput", 
+            "s"
+          ], 
+          [
+            "half4", 
+            "light"
+          ]
+        ], 
+        "ret": "fixed4"
+      }, 
+      "name": "LightingLambert_PrePass", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "SurfaceOutput", 
+            "s"
+          ], 
+          [
+            "fixed4", 
+            "color"
+          ], 
+          [
+            "fixed4", 
+            "scale"
+          ], 
+          [
+            "bool", 
+            "surfFuncWritesNormal"
+          ]
+        ], 
+        "ret": "half4"
+      }, 
+      "name": "LightingLambert_DirLightmap", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "SurfaceOutput", 
+            "s"
+          ], 
+          [
+            "fixed3", 
+            "lightDir"
+          ], 
+          [
+            "half3", 
+            "viewDir"
+          ], 
+          [
+            "fixed", 
+            "atten"
+          ]
+        ], 
+        "ret": "fixed4"
+      }, 
+      "name": "LightingBlinnPhong", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "SurfaceOutput", 
+            "s"
+          ], 
+          [
+            "half4", 
+            "light"
+          ]
+        ], 
+        "ret": "fixed4"
+      }, 
+      "name": "LightingBlinnPhong_PrePass", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "SurfaceOutput", 
+            "s"
+          ], 
+          [
+            "fixed4", 
+            "color"
+          ], 
+          [
+            "fixed4", 
+            "scale"
+          ], 
+          [
+            "half3", 
+            "viewDir"
+          ], 
+          [
+            "bool", 
+            "surfFuncWritesNormal"
+          ], 
+          [
+            "out half3", 
+            "specColor"
+          ]
+        ], 
+        "ret": "half4"
+      }, 
+      "name": "LightingBlinnPhong_DirLightmap", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler1D", 
+            "x"
+          ], 
+          [
+            "float", 
+            "v"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex1D", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler2D", 
+            "x"
+          ], 
+          [
+            "float2", 
+            "v"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex2D", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler3D", 
+            "x"
+          ], 
+          [
+            "float3", 
+            "v"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex3D", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "samplerCUBE", 
+            "x"
+          ], 
+          [
+            "float3", 
+            "v"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "texCUBE", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler1D", 
+            "x"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex1Dbias", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler2D", 
+            "x"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex2Dbias", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler3D", 
+            "x"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex3Dbias", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "samplerCUBE", 
+            "x"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "texCUBEbias", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler1D", 
+            "x"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex1Dlod", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler2D", 
+            "x"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex2Dlod", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler3D", 
+            "x"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex3Dlod", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "samplerCUBE", 
+            "x"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "texCUBElod", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler1D", 
+            "x"
+          ], 
+          [
+            "float", 
+            "t"
+          ], 
+          [
+            "float", 
+            "dx"
+          ], 
+          [
+            "float", 
+            "dy"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex1Dgrad", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler2D", 
+            "x"
+          ], 
+          [
+            "float2", 
+            "t"
+          ], 
+          [
+            "float2", 
+            "dx"
+          ], 
+          [
+            "float2", 
+            "dy"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex2Dgrad", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler3D", 
+            "x"
+          ], 
+          [
+            "float3", 
+            "t"
+          ], 
+          [
+            "float3", 
+            "dx"
+          ], 
+          [
+            "float3", 
+            "dy"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex3Dgrad", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "samplerCUBE", 
+            "x"
+          ], 
+          [
+            "float3", 
+            "t"
+          ], 
+          [
+            "float3", 
+            "dx"
+          ], 
+          [
+            "float3", 
+            "dy"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "texCUBEgrad", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler1D", 
+            "s"
+          ], 
+          [
+            "in float2", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex1Dproj", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler1D", 
+            "s"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex1Dproj", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler2D", 
+            "s"
+          ], 
+          [
+            "in float3", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex2Dproj", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler2D", 
+            "s"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex2Dproj", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "sampler3D", 
+            "s"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex3Dproj", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "samplerCUBE", 
+            "s"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "texCUBEproj", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "in sampler2D", 
+            "s"
+          ], 
+          [
+            "in float4", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex2Dproj", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "in sampler2D", 
+            "s"
+          ], 
+          [
+            "in float3", 
+            "t"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "tex2Dproj", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "shadowCoord"
+          ]
+        ], 
+        "ret": "fixed"
+      }, 
+      "name": "unitySampleShadow", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "shadowCoord"
+          ]
+        ], 
+        "ret": "fixed"
+      }, 
+      "name": "unitySampleShadow", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "shadowCoord"
+          ]
+        ], 
+        "ret": "fixed"
+      }, 
+      "name": "unitySampleShadow", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float3", 
+            "vec"
+          ]
+        ], 
+        "ret": "float"
+      }, 
+      "name": "SampleCubeDistance", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float3", 
+            "vec"
+          ]
+        ], 
+        "ret": "float"
+      }, 
+      "name": "unityCubeShadow", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "LightCoord"
+          ]
+        ], 
+        "ret": "fixed"
+      }, 
+      "name": "UnitySpotCookie", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float3", 
+            "LightCoord"
+          ]
+        ], 
+        "ret": "fixed"
+      }, 
+      "name": "UnitySpotAttenuate", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "vertex"
+          ], 
+          [
+            "float", 
+            "minDist"
+          ], 
+          [
+            "float", 
+            "maxDist"
+          ], 
+          [
+            "float", 
+            "tess"
+          ]
+        ], 
+        "ret": "float"
+      }, 
+      "name": "UnityCalcDistanceTessFactor", 
+      "file": "Tessellation.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float3", 
+            "triVertexFactors"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "UnityCalcTriEdgeTessFactors", 
+      "file": "Tessellation.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float3", 
+            "wpos0"
+          ], 
+          [
+            "float3", 
+            "wpos1"
+          ], 
+          [
+            "float", 
+            "edgeLen"
+          ]
+        ], 
+        "ret": "float"
+      }, 
+      "name": "UnityCalcEdgeTessFactor", 
+      "file": "Tessellation.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float3", 
+            "pos"
+          ], 
+          [
+            "float4", 
+            "plane"
+          ]
+        ], 
+        "ret": "float"
+      }, 
+      "name": "UnityDistanceFromPlane", 
+      "file": "Tessellation.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float3", 
+            "wpos0"
+          ], 
+          [
+            "float3", 
+            "wpos1"
+          ], 
+          [
+            "float3", 
+            "wpos2"
+          ], 
+          [
+            "float", 
+            "cullEps"
+          ]
+        ], 
+        "ret": "bool"
+      }, 
+      "name": "UnityWorldViewFrustumCull", 
+      "file": "Tessellation.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "v0"
+          ], 
+          [
+            "float4", 
+            "v1"
+          ], 
+          [
+            "float4", 
+            "v2"
+          ], 
+          [
+            "float", 
+            "minDist"
+          ], 
+          [
+            "float", 
+            "maxDist"
+          ], 
+          [
+            "float", 
+            "tess"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "UnityDistanceBasedTess", 
+      "file": "Tessellation.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "v0"
+          ], 
+          [
+            "float4", 
+            "v1"
+          ], 
+          [
+            "float4", 
+            "v2"
+          ], 
+          [
+            "float", 
+            "edgeLength"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "UnityEdgeLengthBasedTess", 
+      "file": "Tessellation.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "v0"
+          ], 
+          [
+            "float4", 
+            "v1"
+          ], 
+          [
+            "float4", 
+            "v2"
+          ], 
+          [
+            "float", 
+            "edgeLength"
+          ], 
+          [
+            "float", 
+            "maxDisplacement"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "UnityEdgeLengthBasedTessCull", 
+      "file": "Tessellation.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "in float4", 
+            "v"
+          ]
+        ], 
+        "ret": "float3"
+      }, 
+      "name": "WorldSpaceLightDir", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "in float4", 
+            "v"
+          ]
+        ], 
+        "ret": "float3"
+      }, 
+      "name": "ObjSpaceLightDir", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "in float4", 
+            "v"
+          ]
+        ], 
+        "ret": "float3"
+      }, 
+      "name": "WorldSpaceViewDir", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "in float4", 
+            "v"
+          ]
+        ], 
+        "ret": "float3"
+      }, 
+      "name": "ObjSpaceViewDir", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "lightPosX"
+          ], 
+          [
+            "float4", 
+            "lightPosY"
+          ], 
+          [
+            "float4", 
+            "lightPosZ"
+          ], 
+          [
+            "float3", 
+            "lightColor0"
+          ], 
+          [
+            "float3", 
+            "lightColor1"
+          ], 
+          [
+            "float3", 
+            "lightColor2"
+          ], 
+          [
+            "float3", 
+            "lightColor3"
+          ], 
+          [
+            "float4", 
+            "lightAttenSq"
+          ], 
+          [
+            "float3", 
+            "pos"
+          ], 
+          [
+            "float3", 
+            "normal"
+          ]
+        ], 
+        "ret": "float3"
+      }, 
+      "name": "Shade4PointLights", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "vertex"
+          ], 
+          [
+            "float3", 
+            "normal"
+          ]
+        ], 
+        "ret": "float3"
+      }, 
+      "name": "ShadeVertexLights", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "half4", 
+            "normal"
+          ]
+        ], 
+        "ret": "half3"
+      }, 
+      "name": "ShadeSH9", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "v2f_vertex_lit", 
+            "i"
+          ], 
+          [
+            "sampler2D", 
+            "mainTex"
+          ]
+        ], 
+        "ret": "fixed4"
+      }, 
+      "name": "VertexLight", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "half3", 
+            "viewDir"
+          ]
+        ], 
+        "ret": "float2"
+      }, 
+      "name": "ParallaxOffset", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "fixed3", 
+            "c"
+          ]
+        ], 
+        "ret": "fixed"
+      }, 
+      "name": "Luminance", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "fixed4", 
+            "color"
+          ]
+        ], 
+        "ret": "fixed3"
+      }, 
+      "name": "DecodeLightmap", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4x4", 
+            "mat"
+          ], 
+          [
+            "float2", 
+            "inUV"
+          ]
+        ], 
+        "ret": "float2"
+      }, 
+      "name": "MultiplyUV", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "appdata_img", 
+            "v"
+          ]
+        ], 
+        "ret": "v2f_img"
+      }, 
+      "name": "vert_img", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float", 
+            "v"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "EncodeFloatRGBA", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "enc"
+          ]
+        ], 
+        "ret": "float"
+      }, 
+      "name": "DecodeFloatRGBA", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float", 
+            "v"
+          ]
+        ], 
+        "ret": "float2"
+      }, 
+      "name": "EncodeFloatRG", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float2", 
+            "enc"
+          ]
+        ], 
+        "ret": "float"
+      }, 
+      "name": "DecodeFloatRG", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float3", 
+            "n"
+          ]
+        ], 
+        "ret": "float2"
+      }, 
+      "name": "EncodeViewNormalStereo", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "enc4"
+          ]
+        ], 
+        "ret": "float3"
+      }, 
+      "name": "DecodeViewNormalStereo", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float", 
+            "depth"
+          ], 
+          [
+            "float3", 
+            "normal"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "EncodeDepthNormal", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "enc"
+          ], 
+          [
+            "out float", 
+            "depth"
+          ], 
+          [
+            "out float3", 
+            "normal"
+          ]
+        ], 
+        "ret": "void"
+      }, 
+      "name": "DecodeDepthNormal", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "fixed4", 
+            "packednormal"
+          ]
+        ], 
+        "ret": "fixed3"
+      }, 
+      "name": "UnpackNormalDXT5nm", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "fixed4", 
+            "packednormal"
+          ]
+        ], 
+        "ret": "fixed3"
+      }, 
+      "name": "UnpackNormal", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float", 
+            "z"
+          ]
+        ], 
+        "ret": "float"
+      }, 
+      "name": "Linear01Depth", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float", 
+            "z"
+          ]
+        ], 
+        "ret": "float"
+      }, 
+      "name": "LinearEyeDepth", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "pos"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "ComputeScreenPos", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "pos"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "ComputeGrabScreenPos", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float4", 
+            "pos"
+          ]
+        ], 
+        "ret": "float4"
+      }, 
+      "name": "UnityPixelSnap", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float2", 
+            "v"
+          ]
+        ], 
+        "ret": "float2"
+      }, 
+      "name": "TransformViewToProjection", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "par": [
+          [
+            "float3", 
+            "v"
+          ]
+        ], 
+        "ret": "float3"
+      }, 
+      "name": "TransformViewToProjection", 
+      "file": "UnityCG.cginc"
+    }
+  ], 
+  "macro_sets": [
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "TERRAIN_ENGINE_INCLUDED", 
+      "file": "TerrainEngine.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "LIGHTING_INCLUDED", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "USING_DIRECTIONAL_LIGHT", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_DIRBASIS", 
+      "file": "Lighting.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "HLSL_SUPPORT_INCLUDED", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_COMPILER_HLSL", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_COMPILER_HLSL2GLSL", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_COMPILER_CG", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "S_TARGET_OUTPUT"
+      }, 
+      "name": "SV_Target", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "COLOR"
+      }, 
+      "name": "SV_Target", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "S_DEPTH_OUTPUT"
+      }, 
+      "name": "SV_Depth", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "DEPTH"
+      }, 
+      "name": "SV_Depth", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "half4x4"
+      }, 
+      "name": "fixed4x4", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D"
+      }, 
+      "name": "sampler2D_half", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D"
+      }, 
+      "name": "sampler2D_float", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "samplerCUBE"
+      }, 
+      "name": "samplerCUBE_half", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "samplerCUBE"
+      }, 
+      "name": "samplerCUBE_float", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float"
+      }, 
+      "name": "half", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "half4x4"
+      }, 
+      "name": "fixed4x4", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "ConstantBuffer name {"
+      }, 
+      "name": "CBUFFER_START(name)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "};"
+      }, 
+      "name": "CBUFFER_END", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "cbuffer name {"
+      }, 
+      "name": "CBUFFER_START(name)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "};"
+      }, 
+      "name": "CBUFFER_END", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "CBUFFER_START(name)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "CBUFFER_END", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "Texture2D tex; SamplerComparisonState sampler##tex"
+      }, 
+      "name": "UNITY_DECLARE_SHADOWMAP(tex)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex.SampleCmpLOD0(sampler##tex,(coord).xy,(coord).z)"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex.SampleCmpLOD0(sampler##tex,(coord).xy/(coord).w,(coord).z/(coord).w)"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW_PROJ(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "Texture2D tex; SamplerComparisonState sampler##tex"
+      }, 
+      "name": "UNITY_DECLARE_SHADOWMAP(tex)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex.SampleCmpLevelZero (sampler##tex,(coord).xy,(coord).z)"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex.SampleCmpLevelZero (sampler##tex,(coord).xy/(coord).w,(coord).z/(coord).w)"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW_PROJ(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2DShadow tex"
+      }, 
+      "name": "UNITY_DECLARE_SHADOWMAP(tex)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "shadow2D (tex,(coord).xyz)"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "shadow2Dproj (tex,coord)"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW_PROJ(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D tex"
+      }, 
+      "name": "UNITY_DECLARE_SHADOWMAP(tex)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "f1tex2D<float>(tex, (coord).xyz)"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "f1tex2Dproj<float>(tex, coord)"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW_PROJ(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D tex"
+      }, 
+      "name": "UNITY_DECLARE_SHADOWMAP(tex)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex2D (tex,(coord).xyz).r"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex2Dproj (tex,coord).r"
+      }, 
+      "name": "UNITY_SAMPLE_SHADOW_PROJ(tex,coord)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "sampler2D"
+      }, 
+      "name": "samplerRECT", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex2D"
+      }, 
+      "name": "texRECT", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex2Dlod"
+      }, 
+      "name": "texRECTlod", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex2Dbias"
+      }, 
+      "name": "texRECTbias", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex2Dproj"
+      }, 
+      "name": "texRECTproj", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "S_POSITION"
+      }, 
+      "name": "VPOS", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "WPOS"
+      }, 
+      "name": "VPOS", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex2D"
+      }, 
+      "name": "tex2Dgrad", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "texCUBE"
+      }, 
+      "name": "texCUBEgrad", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex3D"
+      }, 
+      "name": "tex3Dgrad", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "1"
+      }, 
+      "name": "UNITY_HAS_LIGHT_PARAMETERS", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "FOG"
+      }, 
+      "name": "FOGC", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "FACE"
+      }, 
+      "name": "VFACE", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "VFACE"
+      }, 
+      "name": "FACE", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "S_POSITION"
+      }, 
+      "name": "SV_POSITION", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "POSITION"
+      }, 
+      "name": "SV_POSITION", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "r"
+      }, 
+      "name": "UNITY_ATTEN_CHANNEL", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a"
+      }, 
+      "name": "UNITY_ATTEN_CHANNEL", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_HALF_TEXEL_OFFSET", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "1"
+      }, 
+      "name": "UNITY_UV_STARTS_AT_TOP", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_NEAR_CLIP_VALUE (0.0)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_NEAR_CLIP_VALUE (-1.0)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_MIGHT_NOT_HAVE_DEPTH_TEXTURE", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_BUGGY_TEX2DPROJ4", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(a).xyw"
+      }, 
+      "name": "UNITY_PROJ_COORD(a)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a"
+      }, 
+      "name": "UNITY_PROJ_COORD(a)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "name = (type)0;"
+      }, 
+      "name": "UNITY_INITIALIZE_OUTPUT(type,name)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_INITIALIZE_OUTPUT(type,name)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "1"
+      }, 
+      "name": "UNITY_CAN_COMPILE_TESSELLATION", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "domain"
+      }, 
+      "name": "UNITY_domain", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "partitioning"
+      }, 
+      "name": "UNITY_partitioning", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "outputtopology"
+      }, 
+      "name": "UNITY_outputtopology", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "patchconstantfunc"
+      }, 
+      "name": "UNITY_patchconstantfunc", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "outputcontrolpoints"
+      }, 
+      "name": "UNITY_outputcontrolpoints", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "1"
+      }, 
+      "name": "UNITY_CAN_COMPILE_TESSELLATION", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "S_OUTPUT_CONTROL_POINT_ID"
+      }, 
+      "name": "SV_OutputControlPointID", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "S_EDGE_TESS_FACTOR"
+      }, 
+      "name": "SV_TessFactor", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "S_INSIDE_TESS_FACTOR"
+      }, 
+      "name": "SV_InsideTessFactor", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "S_DOMAIN_LOCATION"
+      }, 
+      "name": "SV_DomainLocation", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "DOMAIN_PATCH_TYPE"
+      }, 
+      "name": "UNITY_domain", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "PARTITIONING_TYPE"
+      }, 
+      "name": "UNITY_partitioning", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "OUTPUT_TOPOLOGY_TYPE"
+      }, 
+      "name": "UNITY_outputtopology", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "PATCH_CONSTANT_FUNC"
+      }, 
+      "name": "UNITY_patchconstantfunc", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "OUTPUT_CONTROL_POINTS"
+      }, 
+      "name": "UNITY_outputcontrolpoints", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "tex2D(x,y).a"
+      }, 
+      "name": "UNITY_SAMPLE_1CHANNEL(x,y)", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a"
+      }, 
+      "name": "UNITY_ALPHA_CHANNEL", 
+      "file": "HLSLSupport.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "AUTOLIGHT_INCLUDED", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4 _ShadowCoord : TEXCOORD##idx1;"
+      }, 
+      "name": "SHADOW_COORDS(idx1)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a._ShadowCoord = mul( unity_World2Shadow[0], mul( _Object2World, v.vertex ) );"
+      }, 
+      "name": "TRANSFER_SHADOW(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a._ShadowCoord = ComputeScreenPos(a.pos);"
+      }, 
+      "name": "TRANSFER_SHADOW(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "unitySampleShadow(a._ShadowCoord)"
+      }, 
+      "name": "SHADOW_ATTENUATION(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4 _ShadowCoord : TEXCOORD##idx1;"
+      }, 
+      "name": "SHADOW_COORDS(idx1)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a._ShadowCoord = mul (unity_World2Shadow[0], mul(_Object2World,v.vertex));"
+      }, 
+      "name": "TRANSFER_SHADOW(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "unitySampleShadow(a._ShadowCoord)"
+      }, 
+      "name": "SHADOW_ATTENUATION(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float3 _ShadowCoord : TEXCOORD##idx1;"
+      }, 
+      "name": "SHADOW_COORDS(idx1)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a._ShadowCoord = mul(_Object2World, v.vertex).xyz - _LightPositionRange.xyz;"
+      }, 
+      "name": "TRANSFER_SHADOW(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "unityCubeShadow(a._ShadowCoord)"
+      }, 
+      "name": "SHADOW_ATTENUATION(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "SHADOW_COORDS(idx1)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "TRANSFER_SHADOW(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "1.0"
+      }, 
+      "name": "SHADOW_ATTENUATION(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "DIRECTIONAL", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float3 _LightCoord : TEXCOORD##idx1; SHADOW_COORDS(idx2)"
+      }, 
+      "name": "LIGHTING_COORDS(idx1,idx2)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a._LightCoord = mul(_LightMatrix0, mul(_Object2World, v.vertex)).xyz; TRANSFER_SHADOW(a)"
+      }, 
+      "name": "TRANSFER_VERTEX_TO_FRAGMENT(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(tex2D(_LightTexture0, dot(a._LightCoord,a._LightCoord).rr).UNITY_ATTEN_CHANNEL * SHADOW_ATTENUATION(a))"
+      }, 
+      "name": "LIGHT_ATTENUATION(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4 _LightCoord : TEXCOORD##idx1; SHADOW_COORDS(idx2)"
+      }, 
+      "name": "LIGHTING_COORDS(idx1,idx2)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a._LightCoord = mul(_LightMatrix0, mul(_Object2World, v.vertex)); TRANSFER_SHADOW(a)"
+      }, 
+      "name": "TRANSFER_VERTEX_TO_FRAGMENT(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "( (a._LightCoord.z > 0) * UnitySpotCookie(a._LightCoord) * UnitySpotAttenuate(a._LightCoord.xyz) * SHADOW_ATTENUATION(a) )"
+      }, 
+      "name": "LIGHT_ATTENUATION(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "SHADOW_COORDS(idx1)"
+      }, 
+      "name": "LIGHTING_COORDS(idx1,idx2)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "TRANSFER_SHADOW(a)"
+      }, 
+      "name": "TRANSFER_VERTEX_TO_FRAGMENT(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "SHADOW_ATTENUATION(a)"
+      }, 
+      "name": "LIGHT_ATTENUATION(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float3 _LightCoord : TEXCOORD##idx1; SHADOW_COORDS(idx2)"
+      }, 
+      "name": "LIGHTING_COORDS(idx1,idx2)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a._LightCoord = mul(_LightMatrix0, mul(_Object2World, v.vertex)).xyz; TRANSFER_SHADOW(a)"
+      }, 
+      "name": "TRANSFER_VERTEX_TO_FRAGMENT(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(tex2D(_LightTextureB0, dot(a._LightCoord,a._LightCoord).rr).UNITY_ATTEN_CHANNEL * texCUBE(_LightTexture0, a._LightCoord).w * SHADOW_ATTENUATION(a))"
+      }, 
+      "name": "LIGHT_ATTENUATION(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float2 _LightCoord : TEXCOORD##idx1; SHADOW_COORDS(idx2)"
+      }, 
+      "name": "LIGHTING_COORDS(idx1,idx2)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "a._LightCoord = mul(_LightMatrix0, mul(_Object2World, v.vertex)).xy; TRANSFER_SHADOW(a)"
+      }, 
+      "name": "TRANSFER_VERTEX_TO_FRAGMENT(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(tex2D(_LightTexture0, a._LightCoord).w * SHADOW_ATTENUATION(a))"
+      }, 
+      "name": "LIGHT_ATTENUATION(a)", 
+      "file": "AutoLight.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_SHADER_VARIABLES_INCLUDED", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "USING_DIRECTIONAL_LIGHT", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "unity_World2Shadow[0]"
+      }, 
+      "name": "_World2Shadow", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "unity_World2Shadow[1]"
+      }, 
+      "name": "_World2Shadow1", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "unity_World2Shadow[2]"
+      }, 
+      "name": "_World2Shadow2", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "unity_World2Shadow[3]"
+      }, 
+      "name": "_World2Shadow3", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_mvp"
+      }, 
+      "name": "UNITY_MATRIX_MVP", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_modelview0"
+      }, 
+      "name": "UNITY_MATRIX_MV", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_invtrans_modelview0"
+      }, 
+      "name": "UNITY_MATRIX_IT_MV", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.mvp"
+      }, 
+      "name": "UNITY_MATRIX_MVP", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.modelview[0]"
+      }, 
+      "name": "UNITY_MATRIX_MV", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.invtrans.modelview[0]"
+      }, 
+      "name": "UNITY_MATRIX_IT_MV", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_transpose_modelview0"
+      }, 
+      "name": "UNITY_MATRIX_T_MV", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.transpose.modelview[0]"
+      }, 
+      "name": "UNITY_MATRIX_T_MV", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_texture"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_texture0"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE0", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_texture1"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE1", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_texture2"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE2", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_texture3"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE3", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.texture"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.texture[0]"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE0", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.texture[1]"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE1", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.texture[2]"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE2", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.texture[3]"
+      }, 
+      "name": "UNITY_MATRIX_TEXTURE3", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_matrix_projection"
+      }, 
+      "name": "UNITY_MATRIX_P", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate_lightmodel_ambient"
+      }, 
+      "name": "UNITY_LIGHTMODEL_AMBIENT", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.matrix.projection"
+      }, 
+      "name": "UNITY_MATRIX_P", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "glstate.lightmodel.ambient"
+      }, 
+      "name": "UNITY_LIGHTMODEL_AMBIENT", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "unity_MatrixV"
+      }, 
+      "name": "UNITY_MATRIX_V", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "unity_MatrixVP"
+      }, 
+      "name": "UNITY_MATRIX_VP", 
+      "file": "UnityShaderVariables.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "TESSELLATION_CGINC_INCLUDED", 
+      "file": "Tessellation.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_CG_INCLUDED", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(dot((value).wxy, float3(0.996093809371817670572857294849, 0.0038909914428586627756752238080039, 1.5199185323666651467481343000015e-5)))"
+      }, 
+      "name": "UNITY_SAMPLE_DEPTH(value)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(DecodeFloatRGBA(value))"
+      }, 
+      "name": "UNITY_SAMPLE_DEPTH(value)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(value).r"
+      }, 
+      "name": "UNITY_SAMPLE_DEPTH(value)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(value).r"
+      }, 
+      "name": "UNITY_SAMPLE_DEPTH(value)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(dot((tex2D(sampler, uv)).wxy, float3(0.996093809371817670572857294849, 0.0038909914428586627756752238080039, 1.5199185323666651467481343000015e-5)))"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(f1tex2D<float>(sampler, uv))"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(DecodeFloatRGBA(tex2D(sampler, uv)))"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(tex2D(sampler, uv).r)"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(dot((tex2Dproj(sampler, uv)).wxy, float3(0.996093809371817670572857294849, 0.0038909914428586627756752238080039, 1.5199185323666651467481343000015e-5)))"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE_PROJ(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(f1tex2Dproj<float>(sampler, uv))"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE_PROJ(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(DecodeFloatRGBA(tex2Dproj(sampler, uv)))"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE_PROJ(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(tex2Dproj(sampler, uv).r)"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE_PROJ(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(tex2Dlod<float>(sampler, uv))"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE_LOD(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(tex2Dlod(sampler, uv).r)"
+      }, 
+      "name": "SAMPLE_DEPTH_TEXTURE_LOD(sampler, uv)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "USING_LIGHT_MULTI_COMPILE", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "SCALED_NORMAL (v.normal * unity_Scale.w)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "TANGENT_SPACE_ROTATION", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "(tex.xy * name##_ST.xy + name##_ST.zw)"
+      }, 
+      "name": "TRANSFORM_TEX(tex,name)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "mul (UNITY_MATRIX_TEXTURE##idx, v.texcoord).xy"
+      }, 
+      "name": "TRANSFORM_UV(idx)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "oo = o.pos.zw"
+      }, 
+      "name": "UNITY_TRANSFER_DEPTH(oo)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "return EncodeFloatRGBA(i.x/i.y)"
+      }, 
+      "name": "UNITY_OUTPUT_DEPTH(i)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "return i.x/i.y"
+      }, 
+      "name": "UNITY_OUTPUT_DEPTH(i)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "UNITY_TRANSFER_DEPTH(oo)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "return 0"
+      }, 
+      "name": "UNITY_OUTPUT_DEPTH(i)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "LinearEyeDepth(i)"
+      }, 
+      "name": "DECODE_EYEDEPTH(i)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "o = -mul( UNITY_MATRIX_MV, v.vertex ).z"
+      }, 
+      "name": "COMPUTE_EYEDEPTH(o)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ".z * _ProjectionParams.w)"
+      }, 
+      "name": "COMPUTE_DEPTH_01 -(mul( UNITY_MATRIX_MV, v.vertex )", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "UNITY_MATRIX_IT_MV, v.normal)"
+      }, 
+      "name": "COMPUTE_VIEW_NORMAL mul((float3x3)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4"
+      }, 
+      "name": "V2F_SCREEN_TYPE", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4 pos : SV_POSITION; float3 vec : TEXCOORD0"
+      }, 
+      "name": "V2F_SHADOW_CASTER", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "o.vec = mul( _Object2World, v.vertex ).xyz - _LightPositionRange.xyz; o.pos = mul(UNITY_MATRIX_MVP, v.vertex);"
+      }, 
+      "name": "TRANSFER_SHADOW_CASTER(o)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "return EncodeFloatRGBA( min(length(i.vec) * _LightPositionRange.w, 0.999) );"
+      }, 
+      "name": "SHADOW_CASTER_FRAGMENT(i)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4 pos : SV_POSITION; float4 hpos : TEXCOORD0"
+      }, 
+      "name": "V2F_SHADOW_CASTER", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "o.pos = mul(UNITY_MATRIX_MVP, v.vertex); o.pos.z += unity_LightShadowBias.x;"
+      }, 
+      "name": "TRANSFER_SHADOW_CASTER(o)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4 pos : SV_POSITION"
+      }, 
+      "name": "V2F_SHADOW_CASTER", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "o.pos = mul(UNITY_MATRIX_MVP, v.vertex); o.pos.z += unity_LightShadowBias.x;"
+      }, 
+      "name": "TRANSFER_SHADOW_CASTER(o)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "UNITY_OUTPUT_DEPTH(i.hpos.zw);"
+      }, 
+      "name": "SHADOW_CASTER_FRAGMENT(i)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": "float4 pos : SV_POSITION; float3 _ShadowCoord0 : TEXCOORD0; float3 _ShadowCoord1 : TEXCOORD1; float3 _ShadowCoord2 : TEXCOORD2; float3 _ShadowCoord3 : TEXCOORD3; float4 _WorldPosViewZ : TEXCOORD4"
+      }, 
+      "name": "V2F_SHADOW_COLLECTOR", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "TRANSFER_SHADOW_COLLECTOR(o)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "SAMPLE_SHADOW_COLLECTOR_SHADOW(coord)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "SAMPLE_SHADOW_COLLECTOR_SHADOW(coord)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "COMPUTE_SHADOW_COLLECTOR_SHADOW(i, weights, shadowFade)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "SHADOW_COLLECTOR_FRAGMENT(i)", 
+      "file": "UnityCG.cginc"
+    }, 
+    {
+      "variables": {
+        "desc": ""
+      }, 
+      "name": "SHADOW_COLLECTOR_FRAGMENT(i)", 
+      "file": "UnityCG.cginc"
+    }
+  ], 
+  "head_sets": [
+    "TerrainEngine.cginc", 
+    "Lighting.cginc", 
+    "HLSLSupport.cginc", 
+    "AutoLight.cginc", 
+    "UnityShaderVariables.cginc", 
+    "Tessellation.cginc", 
+    "UnityCG.cginc"
+  ]
+}
